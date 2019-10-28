@@ -698,7 +698,7 @@ class coinbasepro (Exchange):
         if method == 'GET':
             if query:
                 request += '?' + self.urlencode(query)
-        url = self.urls['api'] + request
+        url = self.urls['test'] + request
         if api == 'private':
             self.check_required_credentials()
             nonce = str(self.nonce())
